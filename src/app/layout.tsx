@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -34,6 +36,8 @@ export default function RootLayout({
       <body className={`${poppins.variable} ${firaCode.variable} antialiased`}>
         <Navbar />
         {children}
+        <Analytics/>
+        <SpeedInsights/>
         <Footer />
       </body>
     </html>
