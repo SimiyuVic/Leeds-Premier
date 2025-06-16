@@ -168,7 +168,7 @@ const About = () => {
               <h3 className="text-xl font-semibold">Years of Excellence</h3>
             </div>
             <p className="text-teal-100">
-              Since our founding in 2002, we've consistently delivered quality education to Bungoma County and beyond.
+              Since our founding in 2019, we've consistently delivered quality education to Bungoma County and beyond.
             </p>
           </div>
           <div>

@@ -11,7 +11,7 @@ const slides = [
     subtitle: "Leeds Premier Schools",
     description: "Where potential meets opportunity in a nurturing environment  for growth.",
     cta: "More on Our School",
-    link: "/campus-tour",
+    link: "/about-us",
   },
   {
     image: "/banner-images/bg-2.jpeg",
@@ -19,15 +19,15 @@ const slides = [
     subtitle: "Since 2019",
     description: "A tradition of academic excellence and character development  at Leeds Premier",
     cta: "Our History",
-    link: "/about",
+    link: "/about-us",
   },
   {
     image: "/banner-images/bg-3.jpeg",
     title: "Future-Ready Learning",
     subtitle: "Innovative Programs",
     description: "Preparing students for the challenges of tomorrow with a modern curriculum.",
-    cta: "Explore Curriculum",
-    link: "/programs",
+    cta: "How To Join Us",
+    link: "/admissions",
   },
 ];
 
