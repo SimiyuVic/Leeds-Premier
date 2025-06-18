@@ -83,7 +83,7 @@ export default function Footer() {
         <span>© {new Date().getFullYear()} Leeds Premier Schools. All rights reserved.</span>
         <span className="hidden sm:inline">|</span>
         <span className="flex items-center gap-1">
-          Developed by{" "}
+          Contact Developer{" "}
           <button
             onClick={() =>
               window.open("https://wa.me/254798161654", "_blank")

@@ -1,11 +1,54 @@
+'use client';
+
+import { useState } from 'react';
 import MainBanner from "../components/MainBanner";
 import Image from "next/image";
 import Link from "next/link";
+import BookTourPopup from "../components/BookTourPopup";
 
 export default function Home() {
+  const [showPopup, setShowPopup] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
+
+  interface FormData {
+    name: string;
+    email: string;
+    phone: string;
+    date: string;
+    message?: string;
+  }
+
+  const handleSubmit = async (formData: FormData): Promise<void> => {
+    setIsSubmitting(true);
+    try {
+      // Replace with your actual API endpoint
+      const response = await fetch('/api/book-tour', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        setSubmitStatus('success');
+        setTimeout(() => {
+          setShowPopup(false);
+          setSubmitStatus(null);
+        }, 2000);
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <main>
-
       {/* ===== HERO BANNER SECTION ===== */}
       <MainBanner />
 
@@ -100,8 +143,8 @@ export default function Home() {
               {
                 name: "Dr. Naomi Mwikali",
                 title: "Principal, Teacher Training College",
-                image: "/images/leaders/naomi.jpg",
-                message: "We’re committed to producing exceptional educators who will inspire the next generation."
+                image: "/images/leaders/naomi.jpg", 
+                message: "We're committed to producing exceptional educators who will inspire the next generation."
               }
             ].map((leader, index) => (
               <div key={index} className="bg-gray-50 p-6 rounded-xl shadow hover:shadow-md transition">
@@ -206,25 +249,41 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-4">Ready to Join Our Community?</h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Schedule a visit or begin the application process today.
+            Schedule a visit to see what we have to offer.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link
-              href="/visit"
+          <div className="flex justify-center">
+            <button
+              onClick={() => setShowPopup(true)}
               className="bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition"
             >
               Book a Tour
-            </Link>
-            <Link
-              href="/apply"
-              className="bg-transparent border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-gray-900 transition"
-            >
-              Apply Now
-            </Link>
+            </button>
           </div>
         </div>
       </section>
 
+      {/* Book Tour Popup */}
+      {showPopup && (
+        <BookTourPopup 
+          onClose={() => {
+            setShowPopup(false);
+            setSubmitStatus(null);
+          }} 
+          onSubmit={handleSubmit}
+          isSubmitting={isSubmitting}
+        />
+      )}
+
+      {/* Success/Error Notification */}
+      {submitStatus && (
+        <div className={`fixed bottom-4 right-4 px-6 py-3 rounded-md shadow-lg z-50 ${
+          submitStatus === 'success' ? 'bg-green-500' : 'bg-red-500'
+        } text-white`}>
+          {submitStatus === 'success' 
+            ? 'Thank you! Your tour has been booked successfully.' 
+            : 'An error occurred. Please try again later.'}
+        </div>
+      )}
     </main>
   );
 }
