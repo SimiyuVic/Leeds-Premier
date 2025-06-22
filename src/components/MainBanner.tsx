@@ -42,7 +42,7 @@ export default function MainBanner() {
   }, []);
 
   return (
-    <section className="relative w-full h-[80vh] min-h-[500px] max-h-[800px] overflow-hidden mt-25">
+    <section className="relative w-full h-[80vh] min-h-[500px] max-h-[800px] overflow-hidden mt-20">
       {/* Background Slides */}
       {slides.map((slide, index) => (
         <div

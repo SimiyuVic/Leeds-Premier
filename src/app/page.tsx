@@ -54,15 +54,29 @@ export default function Home() {
 
       {/* ===== ABOUT THE GROUP SECTION ===== */}
       <section className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">Welcome to Our School Community</h2>
-          <p className="text-lg text-gray-700">
-            We are a group of forward-thinking institutions offering CBC, Cambridge International Curriculum, 
-            and Teacher Training programs. Our mission is to empower students and educators through a nurturing, 
-            innovative, and globally-minded learning environment.
-          </p>
-        </div>
-      </section>
+  <div className="max-w-7xl mx-auto px-6 lg:px-12">
+    <h2 className="text-3xl font-bold mb-6 text-center">Welcome to Our School Community</h2>
+    <p className="text-lg text-gray-700 mb-4 text-left">
+      We are a group of forward-thinking institutions based in Kenya, offering the CBC (Competency-Based Curriculum), 
+      Cambridge International Curriculum, and comprehensive Teacher Training programs. 
+      Our mission is to empower learners and educators through a nurturing, innovative, and globally-minded learning environment.
+    </p>
+    <p className="text-lg text-gray-700 mb-4">
+      Our primary and junior secondary schools provide a holistic education that fosters creativity, critical thinking, and real-world skills. 
+      With qualified teachers, modern facilities, and technology-integrated learning, we ensure our students are prepared for the future.
+    </p>
+    <p className="text-lg text-gray-700 mb-4">
+      As a leading CBC school in Kenya, we focus on individual talent development, continuous assessment, and character-building. 
+      Our Cambridge curriculum center offers internationally recognized education with a global perspective, 
+      while our teacher training college develops competent educators ready to transform the future of education.
+    </p>
+    <p className="text-lg text-gray-700">
+      Join our vibrant school community today and be part of an educational journey that promotes excellence, inclusivity, and lifelong learning. 
+      Enroll now and experience the difference in quality education tailored for today’s learners.
+    </p>
+  </div>
+</section>
+
 
       {/* ===== EXPLORE OUR SCHOOLS SECTION ===== */}
       <section className="py-16 bg-gray-50">
@@ -71,11 +85,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "CBC School",
+                title: "CBC Campus",
                 description: "Offering competency-based curriculum from pre-primary to junior secondary levels.",
                 href: "/schools/cbc-campus",
                 image: "/home-page/cbc-campus.jpeg",
-                buttonLabel: "More About CBC School"
+                buttonLabel: "More About CBC Campus"
               },
               {
                 title: "Cambridge Campus",
