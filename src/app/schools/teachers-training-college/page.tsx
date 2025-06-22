@@ -40,7 +40,7 @@ const TeachersTrainingCollege = () => {
               </div>
           </div>
 
-          {/* About Our TTC with Image */}
+          {/* About Our TTC */}
           <section className="mb-16">
               <div className="flex flex-col md:flex-row gap-8 items-center">
                   <div className="md:w-1/2">
@@ -66,7 +66,7 @@ const TeachersTrainingCollege = () => {
               </div>
           </section>
 
-          {/* Programs Structure with Images */}
+          {/* Programs Structure */}
           <section className="mb-16 bg-teal-50 p-8 rounded-xl">
               <h2 className="text-3xl font-bold text-teal-800 mb-6 text-center">Our Teacher Training Programs</h2>
               

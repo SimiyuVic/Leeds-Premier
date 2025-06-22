@@ -9,7 +9,7 @@ const slides = [
     image: "/banner-images/bg-1.jpeg",
     title: "Excellence in Education",
     subtitle: "Leeds Premier Schools",
-    description: "Where potential meets opportunity in a nurturing environment  for growth.",
+    description: "Where potential meets opportunity in a nurturing environment for growth.",
     cta: "More on Our School",
     link: "/about-us",
   },
@@ -17,7 +17,7 @@ const slides = [
     image: "/banner-images/bg-2.jpeg",
     title: "Inspiring Young Minds",
     subtitle: "Since 2019",
-    description: "A tradition of academic excellence and character development  at Leeds Premier",
+    description: "A tradition of academic excellence and character development at Leeds Premier",
     cta: "Our History",
     link: "/about-us",
   },
@@ -42,7 +42,7 @@ export default function MainBanner() {
   }, []);
 
   return (
-    <section className="relative w-full h-screen max-h-[800px] overflow-hidden mt-25">
+    <section className="relative w-full h-[80vh] min-h-[500px] max-h-[800px] overflow-hidden mt-25">
       {/* Background Slides */}
       {slides.map((slide, index) => (
         <div
@@ -58,6 +58,7 @@ export default function MainBanner() {
             priority={index === 0}
             className="object-cover object-center"
             quality={100}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           />
           <div className="absolute inset-0 bg-black/40"></div>
         </div>
@@ -65,19 +66,19 @@ export default function MainBanner() {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-white">
+        <div className="max-w-4xl mx-auto text-white px-4">
           <span className="block text-lg sm:text-xl font-light mb-2 tracking-widest">
             {slides[currentSlide].subtitle}
           </span>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
             {slides[currentSlide].title}
           </h1>
-          <p className="text-xl sm:text-2xl max-w-2xl mx-auto mb-8">
+          <p className="text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto mb-6 sm:mb-8">
             {slides[currentSlide].description}
           </p>
           <Link
             href={slides[currentSlide].link}
-            className="inline-block px-8 py-3 bg-white text-gray-900 font-medium rounded-lg hover:bg-gray-100 transition duration-300"
+            className="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-white text-gray-900 font-medium rounded-lg hover:bg-gray-100 transition duration-300 text-sm sm:text-base"
           >
             {slides[currentSlide].cta}
           </Link>
@@ -90,7 +91,7 @@ export default function MainBanner() {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-colors ${
+            className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-colors ${
               index === currentSlide ? "bg-white" : "bg-white/50"
             }`}
             aria-label={`Go to slide ${index + 1}`}
@@ -100,7 +101,7 @@ export default function MainBanner() {
 
       {/* Scrolling Indicator */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10">
-        <div className="animate-bounce w-6 h-6 border-2 border-white rounded-full"></div>
+        <div className="animate-bounce w-5 h-5 sm:w-6 sm:h-6 border-2 border-white rounded-full"></div>
       </div>
     </section>
   );

@@ -26,21 +26,25 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="bg-gray-50 border-b border-gray-100 shadow-sm fixed top-0 left-0 right-0 z-50 h-25">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 h-full flex items-center justify-between md:justify-around">
-        {/* Mobile Menu Button */}
+    <header className="bg-gray-50 border-b border-gray-100 shadow-sm fixed top-0 left-0 right-0 z-50 h-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between relative">
+        {/* Mobile Menu Button - Left side */}
         <button
           className="md:hidden text-gray-600 focus:outline-none focus:ring-2 focus:ring-teal-500"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
         </button>
-        {/* Logo / Brand */}
-        <Link href="/" className="text-xl font-semibold text-teal-600 order-last md:order-none">
+
+        {/* Logo / Brand - Centered on mobile */}
+        <Link href="/" className="absolute left-1/3 transform -translate-x-1/4 md:relative md:left-0 md:transform-none text-xl font-semibold text-teal-600">
           Leeds Premier Schools
         </Link>
 
-        {/* Desktop Nav */}
+        {/* Empty div to balance the flex layout on mobile */}
+        <div className="md:hidden w-7"></div>
+
+        {/* Desktop Nav - Right side */}
         <nav className="hidden md:flex space-x-8">
           {navItems.map((item) => (
             <div 
