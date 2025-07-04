@@ -33,7 +33,7 @@ const Admissions = () => {
     ];
 
     return (
-        <div className="py-16 px-4 sm:px-6 lg:px-8 bg-white min-h-screen">
+        <div className="py-16 px-4 sm:px-6 lg:px-8 bg-white min-h-screen mt-10">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold text-blue-800 mb-6 text-center">Admissions & Enrollment</h2>
                 <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">

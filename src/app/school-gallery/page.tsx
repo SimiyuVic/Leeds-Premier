@@ -31,7 +31,7 @@ const SchoolGallery = () => {
   ];
 
   return (
-    <div className="px-6 py-10 max-w-7xl mx-auto">
+    <div className="px-6 py-10 max-w-7xl mx-auto mt-20">
       <h2 className="text-3xl font-bold mb-12 text-center">School Gallery</h2>
       
       {campusGalleries.map((campus, campusIndex) => (

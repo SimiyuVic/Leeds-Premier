@@ -143,13 +143,13 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {[
               {
-                name: "Mr. Richard Otieno",
+                name: "Mr. Maritim",
                 title: "Headteacher, CBC School",
                 image: "/images/leaders/grace.jpg",
                 message: "We nurture each child to be competent, confident and curious — ready to thrive in today's world."
               },
               {
-                name: "Mrs. Wambui",
+                name: "Ms. Wambui",
                 title: "Head of Institution, Cambridge Campus",
                 image: "/images/leaders/richard.jpg",
                 message: "Our global curriculum equips learners with critical thinking, collaboration and innovation skills."
