@@ -193,8 +193,7 @@ const ContactPage = () => {
                     </svg>
                   </div>
                   <div className="ml-3">
-                    <p className="text-gray-700">admissions@leedspremierschools.edu</p>
-                    <p className="text-gray-700">info@leedspremierschools.edu</p>
+                    <p className="text-gray-700">info@leedspremierschools.sc.ke</p>
                   </div>
                 </div>
               </div>

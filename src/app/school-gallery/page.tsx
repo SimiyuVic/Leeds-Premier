@@ -8,24 +8,24 @@ const SchoolGallery = () => {
     {
       name: "CBC Campus",
       images: [
-        '/gallery/cbc-campus-1.jpeg',
-        '/gallery/cbc-campus-2.jpeg',
-        '/gallery/cbc-campus-3.jpeg',
+        '/gallery/cbc/cbc-campus-1.jpeg',
+        '/gallery/cbc/cbc-campus-2.jpeg',
+        '/gallery/cbc/cbc-campus-3.jpeg',
         
       ]
     },
     {
       name: "Cambridge Campus",
       images: [
-        '/gallery/cambridge-campus-1.jpeg',
-        '/gallery/cambridge-campus-2.jpeg',
-        '/gallery/cambridge-campus-3.jpeg',
+        '/gallery/cambridge/cambridge-campus-1.jpeg',
+        '/gallery/cambridge/cambridge-campus-2.jpeg',
+        '/gallery/cambridge/cambridge-campus-3.jpeg',
       ]
     },
     {
       name: "Teachers Training College",
       images: [
-        '/gallery/ttc-campus-1.jpeg',
+        '/gallery/ttc/ttc-campus-1.jpeg',
       ]
     }
   ];

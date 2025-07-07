@@ -25,13 +25,13 @@ export default function Footer() {
               href="mailto:info@leedspremier.ac.ke"
               className="text-gray-600 hover:text-teal-600 transition flex items-center space-x-2"
             >
-              <Mail className="w-4 h-4" /> <span>info@leedspremier.ac.ke</span>
+              <Mail className="w-4 h-4" /> <span>info@leedspremierschools.sc.ke</span>
             </Link>
             <Link
               href="tel:+254712345678"
               className="text-gray-600 hover:text-teal-600 transition flex items-center space-x-2"
             >
-              <Phone className="w-4 h-4" /> <span>+254 712 345 678</span>
+              <Phone className="w-4 h-4" /> <span>+254 116093086</span>
             </Link>
           </div>
           <div className="flex space-x-4 mt-4">

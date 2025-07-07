@@ -22,7 +22,6 @@ export default function Home() {
   const handleSubmit = async (formData: FormData): Promise<void> => {
     setIsSubmitting(true);
     try {
-      // Replace with your actual API endpoint
       const response = await fetch('/api/book-tour', {
         method: 'POST',
         headers: {
