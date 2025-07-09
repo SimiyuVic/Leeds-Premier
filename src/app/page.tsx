@@ -65,9 +65,9 @@ export default function Home() {
         <meta property="og:title" content="Leading Educational Institution in Kenya | CBC & Cambridge Curriculum" />
         <meta property="og:description" content="Premier Kenyan school offering CBC curriculum, Cambridge International programs, and teacher training across multiple campuses." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.yourschoolwebsite.com" />
-        <meta property="og:image" content="https://www.yourschoolwebsite.com/images/school-logo.jpg" />
-        <link rel="canonical" href="https://www.yourschoolwebsite.com" />
+        <meta property="og:url" content="https://leeds-premier-schools.co.ke/" />
+        {/* <meta property="og:image" content="https://www.yourschoolwebsite.com/images/school-logo.jpg" /> */}
+        <link rel="canonical" href="https://leeds-premier-schools.co.ke/" />
       </Head>
 
       <main itemScope itemType="https://schema.org/EducationalOrganization">
