@@ -23,7 +23,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-1/2">
             <img 
-              src="/banner-images/about-school.jpeg" 
+              src="/banner-images/about-us-text-on-wooden.webp" 
               alt="Leeds School founding"
               className="w-full rounded-lg shadow-lg"
             />
@@ -52,7 +52,7 @@ const About = () => {
           {/* CBC Campus */}
           <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-teal-100">
             <img 
-              src="/images/cbc-campus.jpg" 
+              src="/gallery/cbc/cbc-5.jpeg" 
               alt="CBC Campus"
               className="w-full h-48 object-cover"
             />
@@ -73,7 +73,7 @@ const About = () => {
           {/* Cambridge Campus */}
           <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-teal-100">
             <img 
-              src="/images/cambridge-campus.jpg" 
+              src="/gallery/cambridge/about-us-2.jpeg" 
               alt="Cambridge Campus"
               className="w-full h-48 object-cover"
             />
@@ -94,7 +94,7 @@ const About = () => {
           {/* National Curriculum Campus */}
           <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-teal-100">
             <img 
-              src="/images/national-campus.jpg" 
+              src="/gallery/ttc/ttc-campus-1.jpeg"
               alt="TTC"
               className="w-full h-48 object-cover"
             />
@@ -121,7 +121,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <img 
-              src="/images/values-in-action.jpg" 
+              src="/gallery/cbc/cbc-6.jpeg" 
               alt="Students demonstrating values"
               className="w-full h-64 object-cover rounded-lg mb-4"
             />
@@ -136,7 +136,7 @@ const About = () => {
           </div>
           <div>
             <img 
-              src="/images/teaching-approach.jpg" 
+              src="/gallery/cambridge/teacher-student.jpeg" 
               alt="Teacher with students"
               className="w-full h-64 object-cover rounded-lg mb-4"
             />
@@ -197,18 +197,18 @@ const About = () => {
       </section>
 
       {/* Leadership */}
-      <section className="mb-16">
+      {/* <section className="mb-16">
         <h2 className="text-3xl font-bold text-teal-800 mb-8">Meet Our Leadership</h2>
         
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-teal-100">
             <img 
-              src="/images/director.jpg" 
+              src="/gallery/cambridge/director.jpeg" 
               alt="School Director"
               className="w-full h-64 object-cover"
             />
             <div className="p-6">
-              <h3 className="text-xl font-semibold text-teal-700 mb-1">Mrs. Nelima R</h3>
+              <h3 className="text-xl font-semibold text-teal-700 mb-1">Mrs. Nelima Julia</h3>
               <p className="text-teal-600 mb-3">Founder & Director</p>
               <p className="text-gray-700 text-sm">
                 PhD in Educational Leadership with 25+ years experience transforming education in Western Kenya.
@@ -244,10 +244,10 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Community Engagement */}
-      <section className="mb-16">
+      {/* <section className="mb-16">
         <h2 className="text-3xl font-bold text-teal-800 mb-6">Community Engagement</h2>
         
         <div className="flex flex-col md:flex-row gap-8">
@@ -271,10 +271,10 @@ const About = () => {
             </ul>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials */}
-      <section className="mb-16 bg-teal-50 p-8 rounded-xl">
+      {/* <section className="mb-16 bg-teal-50 p-8 rounded-xl">
         <h2 className="text-3xl font-bold text-teal-800 mb-8 text-center">What People Say About Us</h2>
         
         <div className="grid md:grid-cols-3 gap-6">
@@ -327,10 +327,10 @@ const About = () => {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
-      <section className="bg-teal-800 text-white rounded-xl p-12 text-center">
+      {/* <section className="bg-teal-800 text-white rounded-xl p-12 text-center">
         <h2 className="text-3xl font-bold mb-4">Experience Leeds Premier Schools</h2>
         <p className="text-xl text-teal-100 mb-8 max-w-2xl mx-auto">
           Discover how our three campuses can provide the perfect educational pathway for your child.
@@ -343,7 +343,7 @@ const About = () => {
             Contact Admissions
           </button>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
