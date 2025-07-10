@@ -422,25 +422,54 @@ export default function Home() {
               {[
                 {
                   quote: "The teachers genuinely care about each student's growth.",
-                  author: "James Victor, CBC Parent (Kitale)"
+                  author: "James Victor",
+                  role: "CBC Parent (Brigadier)",
+                  reviewedItem: "CBC Campus",
+                  date: "2023-05-15"
                 },
                 {
                   quote: "My child has flourished both academically and socially at the Cambridge campus.",
-                  author: "Michael Kijana, Cambridge Parent (Brigadier)"
+                  author: "Michael Kijana",
+                  role: "Cambridge Parent (Brigadier)",
+                  reviewedItem: "Cambridge Campus",
+                  date: "2023-06-20"
                 },
                 {
                   quote: "The teacher training program gave me practical skills I use every day in my classroom.",
-                  author: "Nafula Moraa, TTC Graduate"
+                  author: "Nafula Moraa",
+                  role: "TTC Graduate",
+                  reviewedItem: "Teacher Training College",
+                  date: "2023-04-10"
                 }
               ].map((testimonial, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="bg-white p-6 rounded-lg shadow-md"
                   itemScope
                   itemType="https://schema.org/Review"
                 >
-                  <blockquote className="text-lg italic mb-4" itemProp="reviewBody">"{testimonial.quote}"</blockquote>
-                  <p className="text-gray-600" itemProp="author">{testimonial.author}</p>
+                  <div itemProp="itemReviewed" itemScope itemType="https://schema.org/EducationalOrganization">
+                    <meta itemProp="name" content={testimonial.reviewedItem} />
+                    {/* Add more properties if available:
+                    <meta itemProp="address" content="..." />
+                    <link itemProp="url" href="https://your-school-website.com" /> */}
+                  </div>
+
+                  <blockquote 
+                    className="text-lg italic mb-4" 
+                    itemProp="reviewBody"
+                    cite={testimonial.date}
+                  >
+                    "{testimonial.quote}"
+                  </blockquote>
+
+                  <div itemProp="author" itemScope itemType="https://schema.org/Person">
+                    <p className="text-gray-600">
+                      <span itemProp="name">{testimonial.author}</span>, <span itemProp="jobTitle">{testimonial.role}</span>
+                    </p>
+                  </div>
+                  
+                  <meta itemProp="datePublished" content={testimonial.date} />
                 </div>
               ))}
             </div>
