@@ -1,9 +1,4 @@
-# *
 User-agent: *
 Allow: /
 
-# Host
-Host: https://leeds-premier-schools.co.ke
-
-# Sitemaps
 Sitemap: https://leeds-premier-schools.co.ke/sitemap.xml
