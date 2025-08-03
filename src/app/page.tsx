@@ -58,7 +58,7 @@ export default function Home() {
         <title>Leading Educational Institution in Kenya | CBC & Cambridge Curriculum</title>
         <meta 
           name="description" 
-          content="Premier Kenyan school offering CBC curriculum along Kitale Kiminini Road, Cambridge International programs in Brigadier, and teacher training college. Modern facilities with qualified educators." 
+          content="Premier Kenyan school offering CBC curriculum along Kitale Kiminini Road at Sister Fridah Junction, Cambridge International programs in Brigadier, and teacher training college. Modern facilities with qualified educators." 
         />
         <meta name="keywords" content="Kenya schools, CBC curriculum Kenya, Cambridge International Kenya, teacher training college, best schools in Kitale, schools in Brigadier" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -66,7 +66,6 @@ export default function Home() {
         <meta property="og:description" content="Premier Kenyan school offering CBC curriculum, Cambridge International programs, and teacher training across multiple campuses." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://leeds-premier-schools.co.ke/" />
-        {/* <meta property="og:image" content="https://www.yourschoolwebsite.com/images/school-logo.jpg" /> */}
         <link rel="canonical" href="https://leeds-premier-schools.co.ke/" />
       </Head>
 
@@ -78,29 +77,55 @@ export default function Home() {
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
             <h1 className="text-3xl font-bold mb-6 text-center">Welcome to Our School Community</h1>
-            <p className="text-lg text-gray-700 mb-4 text-left">
-              We are a group of forward-thinking institutions based in Kenya, offering the CBC (Competency-Based Curriculum), 
-              Cambridge International Curriculum, and comprehensive Teacher Training programs across multiple campuses. 
+
+            <p className="text-lg text-gray-700 mb-6 text-left">
+              We are a group of forward-thinking institutions based in Kenya, offering the CBC (Competency-Based Curriculum),
+              Cambridge International Curriculum, and comprehensive Teacher Training programs across multiple campuses.
               Our mission is to empower learners and educators through a nurturing, innovative, and globally-minded learning environment.
             </p>
-            <p className="text-lg text-gray-700 mb-4">
-              As a top-rated <strong>CBC school in Kenya</strong>, we are committed to nurturing every learner's potential through individualized talent development, continuous assessment, and strong values. 
-              Our <strong>Cambridge Campus along Kitale–Kiminini Road</strong> delivers world-class, internationally recognized education based on the <strong>Cambridge curriculum</strong>, preparing students for <strong>IGCSE and A-Level examinations</strong> with direct pathways to prestigious universities worldwide.
+
+            <h2 className="text-2xl font-semibold text-green-800 mb-4">Cambridge International School – Kitale, Trans-Nzoia County</h2>
+            <p className="text-lg text-gray-700 mb-6">
+              As a top-rated <strong>International school in Kenya and located in Kitale, Trans-Nzoia County</strong>, we are committed to nurturing every learner's potential through individualized talent development, continuous assessment, and strong values.
+              Our <strong>Cambridge Campus (International School) along Kitale–Kiminini Road at Sister Fridah junction</strong> delivers world-class, internationally recognized education based on the <strong>Cambridge curriculum</strong>, preparing students for <strong>IGCSE and A-Level examinations</strong> with direct pathways to prestigious universities worldwide.
             </p>
-            <p className="text-lg text-gray-700 mb-4">
-              Our <strong>Competency-Based Curriculum (CBC) Center in Brigadier</strong>, conveniently located along <strong>Matunda–Misikhu Road</strong>, offers a holistic learning experience focused on creativity, critical thinking, and practical life skills. 
+
+            <h2 className="text-2xl font-semibold text-green-800 mb-4">CBC Center – Brigadier, Bungoma County</h2>
+            <p className="text-lg text-gray-700 mb-6">
+              Our <strong>Competency-Based Curriculum (CBC) Center in Brigadier in Bungoma County</strong>, conveniently located along <strong>Matunda–Misikhu Road</strong>, offers a holistic learning experience focused on creativity, critical thinking, and practical life skills.
               As a leading <strong>CBC school in Bungoma and Kenya at large</strong>, we combine modern teaching methods, qualified educators, and digital tools to ensure our learners are equipped for the 21st century.
             </p>
-            <p className="text-lg text-gray-700 mb-4">
-              The <strong>Teacher Training College (TTC) in Brigadier</strong>, also situated along <strong>Matunda–Misikhu Road</strong>, ranked as one of the best in Bungoma county, trains the next generation of educators with excellence. 
+
+            <h2 className="text-2xl font-semibold text-green-800 mb-4">Teacher Training College – Brigadier, Bungoma County</h2>
+            <p className="text-lg text-gray-700 mb-6">
+              The <strong>Teacher Training College (TTC) in Brigadier also in Bungoma County</strong>, also situated along <strong>Matunda–Misikhu Road</strong>, ranked as one of the best in Bungoma County, trains the next generation of educators with excellence.
               We offer fully accredited programs in <strong>ECDE, P1, and Diploma in Education</strong>, blending strong academic foundations with hands-on teaching practice—ideal for those looking to join the teaching profession in Kenya.
             </p>
-            <p className="text-lg text-gray-700">
-              Join our vibrant school community today and be part of an educational journey that promotes excellence, inclusivity, and lifelong learning. 
+
+            <p className="text-lg text-gray-700 mb-8">
+              Join our vibrant school community today and be part of an educational journey that promotes excellence, inclusivity, and lifelong learning.
               Enroll now and experience the difference in quality education tailored for today's learners.
             </p>
           </div>
         </section>
+        <section className="py-16 bg-gradient-to-r from-green-600 to-teal-600 text-white">
+          <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold mb-4">Ready to Join Our Community?</h2>
+            <p className="text-xl mb-8 max-w-3xl mx-auto">
+              Schedule a visit to any of our campuses.
+            </p>
+            <div className="flex justify-center">
+              <button
+                onClick={() => setShowPopup(true)}
+                className="bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition"
+                aria-label="Book a school tour"
+              >
+                Book a Tour
+              </button>
+            </div>
+          </div>
+        </section>
+
 
         {/* ===== EXPLORE OUR SCHOOLS SECTION ===== */}
         <section className="py-16 bg-gray-50">
@@ -110,19 +135,19 @@ export default function Home() {
               {[
                 {
                   title: "CBC Campus",
-                  description: "Located in Brigadier along Matunda–Misikhu Road, our CBC Campus offers the Competency-Based Curriculum from pre-primary to junior secondary levels. It features modern facilities, technology-enhanced learning, and a focus on creativity and life skills.",
+                  description: "Located in Brigadier along Matunda–Misikhu Road, our CBC Campus offers the best Competency-Based Curriculum from pre-primary to junior secondary levels in Bungoma County and Kenya at large. It features modern facilities, technology-enhanced learning, and a focus on creativity and life skills.",
                   href: "/schools/cbc-campus",
                   image: "/home-page/cbc-campus.jpeg",
                   buttonLabel: "More About CBC Campus",
                   location: "Brigadier – Matunda–Misikhu Road"
                 },
                 {
-                  title: "Cambridge Campus",
-                  description: "Situated along Kitale–Kiminini Road, our Cambridge Campus delivers the internationally acclaimed British curriculum, preparing learners for IGCSE and A-Level examinations with global university opportunities.",
+                  title: "Cambridge Campus (International School)",
+                  description: "Situated along Kitale–Kiminini Road at Sister Fridah Junction, our Cambridge Campus delivers the internationally acclaimed British curriculum, preparing learners for IGCSE and A-Level examinations with global university opportunities.",
                   href: "/schools/cambridge-campus",
                   image: "/home-page/cambridge-campus.jpeg",
                   buttonLabel: "More About Cambridge Campus",
-                  location: "Kitale–Kiminini Road"
+                  location: "Kitale–Kiminini Road at Sister Fridah Junction"
                 },
                 {
                   title: "Teacher Training College",
@@ -350,7 +375,7 @@ export default function Home() {
                     />
                   </div>
                   <h3 className="text-xl font-semibold" itemProp="name">{leader.name}</h3>
-                  <p className="text-blue-600 text-sm mb-3" itemProp="jobTitle">{leader.title}</p>
+                  <p className="text-green-600 text-sm mb-3" itemProp="jobTitle">{leader.title}</p>
                   <p className="text-gray-600 text-sm italic" itemProp="description">"{leader.message}"</p>
                 </div>
               ))}
@@ -477,11 +502,11 @@ export default function Home() {
         </section>
 
         {/* ===== FINAL CALL-TO-ACTION SECTION ===== */}
-        <section className="py-16 bg-gradient-to-r from-blue-600 to-teal-600 text-white">
+        <section className="py-16 bg-gradient-to-r from-green-600 to-teal-600 text-white">
           <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl font-bold mb-4">Ready to Join Our Community?</h2>
             <p className="text-xl mb-8 max-w-3xl mx-auto">
-              Schedule a visit to any of our campuses in Kitale Kiminini Road or Brigadier.
+              Schedule a visit to any of our campuses.
             </p>
             <div className="flex justify-center">
               <button
