@@ -200,55 +200,57 @@ const Cbc_Campus = () => {
                 </div>
             </section>
 
-            {/* Local Context Integration with Images */}
+            {/* Scouts and Community Impact Section */}
             <section className="mb-16 bg-green-800 text-white p-8 rounded-xl">
-                <h2 className="text-3xl font-bold mb-6">Rooted in Bungoma Community</h2>
-                
+                <h2 className="text-3xl font-bold mb-6">Scouting for a Better Bungoma</h2>
+
                 <div className="grid md:grid-cols-2 gap-8 mb-8">
                     <div>
                         <img 
-                            src="/images/local-farm-visit.jpg" 
-                            alt="Students visiting local farm"
+                            src="/gallery/cbc/scouts.jpg" 
+                            alt="Scouts engaging in local activities"
                             className="w-full h-auto rounded-lg mb-4"
                         />
-                        <h3 className="text-xl font-semibold mb-4">Local Partnerships</h3>
+                        <h3 className="text-xl font-semibold mb-4">Scouts in Action</h3>
                         <ul className="space-y-3">
                             <li className="flex items-start">
                                 <svg className="h-5 w-5 text-green-300 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                                <span>Collaboration with local farmers for agricultural projects</span>
+                                <span>Engaging in tree planting drives and clean-up campaigns</span>
                             </li>
                             <li className="flex items-start">
                                 <svg className="h-5 w-5 text-green-300 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                                <span>Partnership with Tongaren Health Centre for health education</span>
+                                <span>Supporting local health initiatives through volunteer work</span>
                             </li>
                             <li className="flex items-start">
                                 <svg className="h-5 w-5 text-green-300 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
-                                <span>Cultural exchange with local Bukusu elders</span>
+                                <span>Organizing peer mentorship and leadership workshops</span>
                             </li>
                         </ul>
                     </div>
+
                     <div>
                         <img 
-                            src="/images/community-service.jpg" 
-                            alt="Students participating in community service"
+                            src="/gallery/cbc/scouts-1.jpg" 
+                            alt="Scouts participating in community service"
                             className="w-full h-auto rounded-lg mb-4"
                         />
                         <h3 className="text-xl font-semibold mb-4">Community Impact</h3>
                         <div className="grid grid-cols-2 gap-4">
-                            <div className="bg-green-700 p-3 rounded text-center text-sm">Adult Literacy Programs</div>
-                            <div className="bg-green-700 p-3 rounded text-center text-sm">School Feeding Program</div>
-                            <div className="bg-green-700 p-3 rounded text-center text-sm">Environmental Conservation</div>
-                            <div className="bg-green-700 p-3 rounded text-center text-sm">Local Talent Development</div>
+                            <div className="bg-green-700 p-3 rounded text-center text-sm">Environmental Awareness</div>
+                            <div className="bg-green-700 p-3 rounded text-center text-sm">Disaster Preparedness Training</div>
+                            <div className="bg-green-700 p-3 rounded text-center text-sm">Youth Empowerment Projects</div>
+                            <div className="bg-green-700 p-3 rounded text-center text-sm">Peace and Unity Campaigns</div>
                         </div>
                     </div>
                 </div>
             </section>
+
 
             {/* Co-Curricular Activities Gallery */}
             <section className="mb-16">
@@ -258,10 +260,10 @@ const Cbc_Campus = () => {
                 <div className="mb-8">
                     <h3 className="text-2xl font-semibold text-green-700 mb-4">Sports Development</h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
-                        <img src="/images/football-team.jpg" alt="School football team" className="w-full h-48 object-cover rounded-lg" />
-                        <img src="/images/netball.jpg" alt="Netball practice" className="w-full h-48 object-cover rounded-lg" />
-                        <img src="/images/athletics.jpg" alt="Athletics competition" className="w-full h-48 object-cover rounded-lg" />
-                        <img src="/images/traditional-games.jpg" alt="Traditional games" className="w-full h-48 object-cover rounded-lg" />
+                        <img src="/gallery/cbc/football.jpg" alt="School football team" className="w-full h-48 object-cover rounded-lg" />
+                        <img src="/gallery/cbc/netball.jpg" alt="Netball practice" className="w-full h-48 object-cover rounded-lg" />
+                        <img src="/gallery/cbc/athletics.jpg" alt="Athletics competition" className="w-full h-48 object-cover rounded-lg" />
+                        <img src="/gallery/cbc/chess.jpg" alt="Traditional games" className="w-full h-48 object-cover rounded-lg" />
                     </div>
                     <p className="text-gray-700">
                         Our sports program develops physical skills, teamwork, and discipline. We compete in county tournaments and have produced several regional champions.
@@ -269,7 +271,7 @@ const Cbc_Campus = () => {
                 </div>
 
                 {/* Performing Arts Gallery */}
-                <div className="mb-8">
+                {/* <div className="mb-8">
                     <h3 className="text-2xl font-semibold text-green-700 mb-4">Performing Arts</h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
                         <img src="/images/drama-performance.jpg" alt="Drama performance" className="w-full h-48 object-cover rounded-lg" />
@@ -280,7 +282,7 @@ const Cbc_Campus = () => {
                     <p className="text-gray-700">
                         Our performing arts program celebrates both local traditions and global artistic expressions, with annual performances that showcase student talent.
                     </p>
-                </div>
+                </div> */}
             </section>
 
             {/* Facilities Gallery */}
@@ -292,30 +294,26 @@ const Cbc_Campus = () => {
                         <h3 className="text-xl font-semibold text-green-700 mb-4">Learning Environment</h3>
                         <div className="grid grid-cols-2 gap-4 mb-4">
                             <img src="/banner-images/cbc-classroom.jpeg" alt="CBC classroom" className="w-full h-48 object-cover rounded-lg" />
-                            <img src="/images/science-corner.jpg" alt="Science corner" className="w-full h-48 object-cover rounded-lg" />
-                            <img src="/images/computer-lab.jpg" alt="Computer lab" className="w-full h-48 object-cover rounded-lg" />
-                            <img src="/images/library.jpg" alt="School library" className="w-full h-48 object-cover rounded-lg" />
+                            <img src="/gallery/cbc/science-corner.webp" alt="Science corner" className="w-full h-48 object-cover rounded-lg" />
                         </div>
                         <ul className="list-disc ml-6 text-gray-700 space-y-2">
                             <li>Spacious CBC-designed classrooms with learning corners</li>
                             <li>Modern computer lab with internet access</li>
                             <li>Science corner for practical experiments</li>
-                            <li>Well-stocked library with reading areas</li>
+                            {/* <li>Well-stocked library with reading areas</li> */}
                         </ul>
                     </div>
                     <div>
-                        <h3 className="text-xl font-semibold text-green-700 mb-4">Outdoor Facilities</h3>
+                        <h3 className="text-xl font-semibold text-green-700 mb-4">All Round</h3>
                         <div className="grid grid-cols-2 gap-4 mb-4">
-                            <img src="/images/playground.jpg" alt="School playground" className="w-full h-48 object-cover rounded-lg" />
-                            <img src="/images/agriculture-plot.jpg" alt="Agricultural plot" className="w-full h-48 object-cover rounded-lg" />
-                            <img src="/images/sports-field.jpg" alt="Sports field" className="w-full h-48 object-cover rounded-lg" />
-                            <img src="/images/outdoor-class.jpg" alt="Outdoor learning" className="w-full h-48 object-cover rounded-lg" />
+                            <img src="/gallery/cbc/computer-lab.jpg" alt="Computer lab" className="w-full h-48 object-cover rounded-lg" />
+                            <img src="/gallery/cbc/garden.jpg"  alt="Agricultural plot" className="w-full h-48 object-cover rounded-lg" />
                         </div>
                         <ul className="list-disc ml-6 text-gray-700 space-y-2">
                             <li>Safe playground with age-appropriate equipment</li>
                             <li>Agricultural plot for practical farming lessons</li>
-                            <li>Sports field for football, athletics and games</li>
-                            <li>Shaded outdoor learning spaces</li>
+                            {/* <li>Sports field for football, athletics and games</li>
+                            <li>Shaded outdoor learning spaces</li> */}
                         </ul>
                     </div>
                 </div>
@@ -328,7 +326,7 @@ const Cbc_Campus = () => {
                     <div className="bg-white p-6 rounded-lg shadow-sm">
                         <div className="flex items-center mb-4">
                             <img 
-                                src="/images/parent-testimonial.jpg" 
+                                src="/home-page/male-avatar.png" 
                                 alt="Happy parent" 
                                 className="w-12 h-12 rounded-full object-cover mr-4"
                             />
@@ -344,7 +342,7 @@ const Cbc_Campus = () => {
                     <div className="bg-white p-6 rounded-lg shadow-sm">
                         <div className="flex items-center mb-4">
                             <img 
-                                src="/images/student-testimonial.jpg" 
+                                src="/home-page/female-avatar.png" 
                                 alt="Happy student" 
                                 className="w-12 h-12 rounded-full object-cover mr-4"
                             />
@@ -360,7 +358,7 @@ const Cbc_Campus = () => {
                     <div className="bg-white p-6 rounded-lg shadow-sm">
                         <div className="flex items-center mb-4">
                             <img 
-                                src="/images/teacher-testimonial.jpg" 
+                                src="/home-page/female-avatar.png"
                                 alt="Teacher" 
                                 className="w-12 h-12 rounded-full object-cover mr-4"
                             />
@@ -381,8 +379,8 @@ const Cbc_Campus = () => {
                 <div className="flex flex-col md:flex-row gap-8 items-center">
                     <div className="md:w-1/2">
                         <img 
-                            src="/banner-images/admssions.jpeg" 
-                            alt="Admissions office"
+                            src="/gallery/cbc/admission.jpg" 
+                            alt="Admissions Process"
                             className="w-full h-auto rounded-lg shadow-md"
                         />
                     </div>
@@ -444,9 +442,6 @@ const Cbc_Campus = () => {
                                 </div>
                             </div>
                         </div>
-                        <button className="bg-white text-green-800 px-6 py-3 rounded-lg font-semibold hover:bg-green-100 transition">
-                            Schedule a Visit
-                        </button>
                     </div>
                     <div className="bg-green-700 p-8 flex items-center justify-center h-full">
                         <img 

@@ -343,19 +343,19 @@ export default function Home() {
                 {
                   name: "Mr. Maritim",
                   title: "Headteacher, CBC School",
-                  image: "/images/leaders/grace.jpg",
+                  image: "/home-page/male-avatar.png",
                   message: "We nurture each child to be competent, confident and curious — ready to thrive in today's world."
                 },
                 {
                   name: "Ms. Wambui",
                   title: "Head of Institution, Cambridge Campus",
-                  image: "/images/leaders/richard.jpg",
+                  image: "/home-page/female-avatar.png",
                   message: "Our global curriculum equips learners with critical thinking, collaboration and innovation skills."
                 },
                 {
-                  name: "Dr. Naomi Mwikali",
+                  name: "Mr. Kisiangani",
                   title: "Principal, Teacher Training College",
-                  image: "/images/leaders/naomi.jpg", 
+                  image: "/home-page/male-avatar.png", 
                   message: "We're committed to producing exceptional educators who will inspire the next generation."
                 }
               ].map((leader, index) => (
@@ -447,7 +447,7 @@ export default function Home() {
               {[
                 {
                   quote: "The teachers genuinely care about each student's growth.",
-                  author: "James Victor",
+                  author: "Mr. Wafula Clement",
                   role: "CBC Parent (Brigadier)",
                   reviewedItem: "CBC Campus",
                   date: "2023-05-15"
@@ -455,14 +455,14 @@ export default function Home() {
                 {
                   quote: "My child has flourished both academically and socially at the Cambridge campus.",
                   author: "Michael Kijana",
-                  role: "Cambridge Parent (Brigadier)",
+                  role: "Cambridge Parent (Kitale)",
                   reviewedItem: "Cambridge Campus",
                   date: "2023-06-20"
                 },
                 {
                   quote: "The teacher training program gave me practical skills I use every day in my classroom.",
                   author: "Nafula Moraa",
-                  role: "TTC Graduate",
+                  role: "TTC Student",
                   reviewedItem: "Teacher Training College",
                   date: "2023-04-10"
                 }
