@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Column 1: Description */}
         <div>
-          <h2 className="text-xl font-semibold text-teal-600 mb-4">Leeds Premier</h2>
+          <h2 className="text-xl font-semibold text-teal-600 mb-4">Leeds Premier Schools</h2>
           <p className="text-gray-600">
             Inspiring minds and shaping futures through quality education. Join our
             community of learners for a transformative journey from early years
@@ -19,7 +19,7 @@ export default function Footer() {
         {/* Column 2: Contact Us */}
         <div>
           <h3 className="text-lg font-semibold text-gray-700 mb-3">Contact Us</h3>
-          <p className="text-gray-600 mb-4">Nairobi, Kenya</p>
+          <p className="text-gray-600 mb-4">Kitale, Kenya</p>
           <div className="space-y-2">
             <Link
               href="mailto:info@leedspremier.ac.ke"
@@ -28,7 +28,7 @@ export default function Footer() {
               <Mail className="w-4 h-4" /> <span>info@leedspremierschools.sc.ke</span>
             </Link>
             <Link
-              href="tel:+254712345678"
+              href="tel:+254116093086"
               className="text-gray-600 hover:text-teal-600 transition flex items-center space-x-2"
             >
               <Phone className="w-4 h-4" /> <span>+254 116093086</span>

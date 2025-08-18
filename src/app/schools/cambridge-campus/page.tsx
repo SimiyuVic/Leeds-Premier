@@ -9,9 +9,9 @@ const CambridgeCampus = () => {
           </div>
           <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
             <div className="text-center p-6">
-              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Leeds School – Cambridge Campus</h1>
+              <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Leeds School - Cambridge Campus</h1>
               <p className="text-xl text-teal-100 max-w-3xl mx-auto">
-                A premier international education institution offering the complete Cambridge Pathway from Early Years through A-Levels
+                A premier international education institution in Kitale Kenya offering the complete Cambridge Pathway from Early Years through A-Levels
               </p>
             </div>
           </div>
@@ -47,7 +47,7 @@ const CambridgeCampus = () => {
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold text-teal-800 mb-4">About Our Cambridge Campus</h2>
               <p className="text-gray-700 mb-4">
-                As one of Leeds Premier Schools' three distinguished institutions, our Cambridge Campus provides an internationally accredited education under the Cambridge Assessment International Education system. Established in 2019, we've grown to become a benchmark for excellence in international education.
+                As one of Leeds Premier Schools' three distinguished institutions, our Cambridge Campus provides an internationally accredited education under the Cambridge Assessment International Education system. Established in 2019 located along Kitale Webuye road at Sister Fridah junction, we've grown to become a benchmark for excellence in international education.
               </p>
               <p className="text-gray-700 mb-4">
                 Our 15-acre campus combines historic architecture with cutting-edge learning facilities, creating an environment that inspires academic achievement and personal growth.
@@ -386,8 +386,8 @@ const CambridgeCampus = () => {
             <h3 className="text-2xl font-semibold text-teal-800 mb-6 text-center">What Our Community Says</h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-sm">
-                <p className="text-gray-700 italic mb-4">"The Cambridge curriculum at Leeds prepared me perfectly for studying Medicine at university. The small class sizes meant I got the attention I needed to excel."</p>
-                <p className="font-semibold text-teal-700">— Sarah K., Alumni</p>
+                <p className="text-gray-700 italic mb-4">"I enjoy everyday at school and learn more and more. I have grown personally and enjoy what our teachers teach as well as the extra curricullar activities that we do keep me healthy."</p>
+                <p className="font-semibold text-teal-700">— Jude Nabwera</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <p className="text-gray-700 italic mb-4">"As an expat family, we valued the international perspective combined with strong academic rigor. Our children thrived both academically and socially."</p>
@@ -395,7 +395,7 @@ const CambridgeCampus = () => {
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm">
                 <p className="text-gray-700 italic mb-4">"Teaching the Cambridge curriculum here is rewarding because of the engaged students and excellent resources. We're able to really stretch our top students."</p>
-                <p className="font-semibold text-teal-700">— Mr. Davies, Head of Science</p>
+                <p className="font-semibold text-teal-700">— Mr. Wafula, English & Music</p>
               </div>
             </div>
           </div>
@@ -434,14 +434,14 @@ const CambridgeCampus = () => {
               </div>
             </div>
           </div>
-          
+                 
           <div className="mt-8 grid md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-xl font-semibold text-teal-700 mb-3">Key Dates</h3>
               <ul className="space-y-3">
                 <li className="flex justify-between border-b border-teal-100 pb-2">
                   <span className="text-gray-700">September Intake Applications Open</span>
-                  <span className="font-semibold text-teal-700">1st January</span>
+                  <span className="font-semibold text-teal-700">Year through</span>
                 </li>
                 <li className="flex justify-between border-b border-teal-100 pb-2">
                   <span className="text-gray-700">Academic Year Begins</span>
@@ -467,7 +467,7 @@ const CambridgeCampus = () => {
   
         {/* Leadership Team */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-teal-800 mb-6">Meet Our Leadership Team</h2>
+          <h2 className="text-3xl font-bold text-teal-800 mb-6">Meet Part of Our Team</h2>
           
          <div className="grid md:grid-cols-3 gap-6">
           {/* Card 1 */}
@@ -476,7 +476,7 @@ const CambridgeCampus = () => {
             <div className="p-6">
               <h3 className="text-xl font-semibold text-teal-700 mb-1">Ms. Wambui</h3>
               <p className="text-teal-600 mb-3">Head of Institution</p>
-              <p className="text-gray-700 text-sm">PhD in Education (Cambridge), 20+ years experience in international schools</p>
+              <p className="text-gray-700 text-sm">Leading with purpose and vision to help your child grow.</p>
             </div>
           </div>
 
@@ -484,27 +484,22 @@ const CambridgeCampus = () => {
           <div className="bg-white border border-teal-100 rounded-lg overflow-hidden">
             <img src="/banner-images/elizabeth.jpeg" alt="Mrs. Elizabeth" className="w-full h-72 object-cover" />
             <div className="p-6">
-              <h3 className="text-xl font-semibold text-teal-700 mb-1">Mrs. Elizabeth Ng</h3>
+              <h3 className="text-xl font-semibold text-teal-700 mb-1">Ms. Luciana</h3>
               <p className="text-teal-600 mb-3">Head of Primary</p>
-              <p className="text-gray-700 text-sm">Specialist in early childhood education, trained at the Institute of Education London</p>
+              <p className="text-gray-700 text-sm">teaching incoperated with care and good up-bringing.</p>
             </div>
           </div>
-
           {/* Card 3 */}
           <div className="bg-white border border-teal-100 rounded-lg overflow-hidden">
-            <img src="/banner-images/Mrs-David.jpeg" alt="Mrs. David" className="w-full h-72 object-cover" />
+            <img src="/banner-images/Mrs-David.jpeg" alt="Ms. Linda Rob" className="w-full h-72 object-cover" />
             <div className="p-6">
-              <h3 className="text-xl font-semibold text-teal-700 mb-1">Mrs. David</h3>
-              <p className="text-teal-600 mb-3">Head of Secondary</p>
-              <p className="text-gray-700 text-sm">Former Cambridge International examiner, chemistry specialist</p>
+              <h3 className="text-xl font-semibold text-teal-700 mb-1">Ms. Linda Rob</h3>
+              <p className="text-teal-600 mb-3">Creche</p>
+              <p className="text-gray-700 text-sm">Specialist in early childhood education</p>
             </div>
           </div>
         </div>
- 
         </section>
-  
-        
-  
         {/* Contact & CTA */}
         <section className="bg-teal-800 text-white rounded-xl overflow-hidden">
           <div className="grid md:grid-cols-2 h-[300px] sm:h-[350px] md:h-[450px] lg:h-[400px]">
