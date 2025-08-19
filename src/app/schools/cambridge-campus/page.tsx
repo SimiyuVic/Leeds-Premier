@@ -1,12 +1,56 @@
+
+import Head from 'next/head';
+
 const CambridgeCampus = () => {
-    return (
-      <div className="max-w-6xl mx-auto px-6 py-12 mt-20    ">
+  return (
+    <>
+      <Head>
+        <title>Cambridge International School in Kitale, Kenya | Leeds School Cambridge Campus</title>
+        <meta name="description" content="Leeds School Cambridge Campus offers complete Cambridge Pathway education from Early Years through A-Levels in Kitale, Kenya. Internationally accredited curriculum with outstanding facilities." />
+        <meta name="keywords" content="Cambridge school Kenya, international school Kitale, British curriculum Kenya, IGCSE school, A-Levels Kenya, Cambridge Pathway, Leeds School Kenya" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="Leeds School - Cambridge Campus | International Education in Kitale, Kenya" />
+        <meta property="og:description" content="Premier Cambridge Pathway school in Kenya offering Early Years through A-Levels education with world-class facilities and outstanding academic results." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.leeds-premier-schools.co.ke/cambridge-campus" />
+        <meta property="og:image" content="https://www.leeds-premier-schools.co.ke/images/cambridge-campus-og.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Leeds School Cambridge Campus | International School Kenya" />
+        <meta name="twitter:description" content="Premier Cambridge Pathway school in Kenya offering complete international education." />
+        <meta name="twitter:image" content="https://www.leeds-premier-schools.co.ke/images/cambridge-campus-twitter.jpg" />
+        <link rel="canonical" href="https://www.leeds-premier-schools.co.ke/cambridge-campus" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "School",
+            "name": "Leeds School Cambridge Campus",
+            "description": "A premier international education institution in Kitale Kenya offering the complete Cambridge Pathway from Early Years through A-Levels",
+            "url": "https://www.leeds-premier-schools.co.ke/cambridge-campus",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Along Kitale Webuye road at Sister Fridah junction",
+              "addressLocality": "Kitale",
+              "addressCountry": "Kenya"
+            },
+            "telephone": "+254 718 012797",
+            "email": "info@leedspremierschools.sc.ke",
+            "foundingDate": "2019",
+            "curriculum": "Cambridge Assessment International Education",
+            "teacherStudentRatio": "1:8",
+            "image": "https://www.leeds-premier-schools.co.ke/images/cambridge-campus.jpg",
+            "priceRange": "$$"
+          })}
+        </script>
+      </Head>
+
+      <div className="max-w-6xl mx-auto px-6 py-12 mt-20">
         {/* Hero Section with Image */}
-        <div className="relative mb-12 rounded-xl overflow-hidden">
-          {/* Image placeholder*/}
-          <div className="bg-teal-800 h-96 flex items-center justify-center text-white text-5xl">
-            [Campus Hero Image]
-          </div>
+        <header className="relative mb-12 rounded-xl overflow-hidden">
+          <img 
+            src="/campus-hero-image.jpg" 
+            alt="Leeds School Cambridge Campus exterior view with students" 
+            className="w-full h-96 object-cover" 
+          />
           <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
             <div className="text-center p-6">
               <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Leeds School - Cambridge Campus</h1>
@@ -15,13 +59,13 @@ const CambridgeCampus = () => {
               </p>
             </div>
           </div>
-        </div>
-  
+        </header>
+
         {/* Quick Facts Bar */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-12 text-center">
           <div className="bg-teal-50 p-4 rounded-lg border border-teal-100">
             <p className="text-teal-800 font-bold text-2xl">6+</p>
-            <p className="text-teal-600">Since 2019</p>
+            <p className="text-teal-600">Years of Excellence</p>
           </div>
           <div className="bg-teal-50 p-4 rounded-lg border border-teal-100">
             <p className="text-teal-800 font-bold text-2xl">1:8</p>
@@ -32,15 +76,16 @@ const CambridgeCampus = () => {
             <p className="text-teal-600">IGCSE Subject Options</p>
           </div>
         </div>
-  
+
         {/* About the Campus */}
         <section className="mb-16">
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="md:w-1/2 overflow-hidden h-80 md:h-[400px] rounded-lg">
               <img 
                 src="/banner-images/about-cambridge.jpeg" 
-                alt="About Cambridge" 
-                className="w-full h-auto mx-auto"
+                alt="Cambridge Campus building and facilities at Leeds School in Kitale" 
+                className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
 
@@ -59,7 +104,7 @@ const CambridgeCampus = () => {
             </div>
           </div>
         </section>
-  
+
         {/* School Hierarchy */}
         <section className="mb-16 bg-teal-50 p-8 rounded-xl">
           <h2 className="text-3xl font-bold text-teal-800 mb-6 text-center">Our School Structure</h2>
@@ -86,16 +131,21 @@ const CambridgeCampus = () => {
             </div>
           </div>
         </section>
-  
+
         {/* Detailed Curriculum Breakdown */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-teal-800 mb-6">Cambridge Curriculum at Leeds</h2>
+          <h2 className="text-3xl font-bold text-teal-800 mb-6">Cambridge Curriculum at Leeds-Kitale</h2>
           
           <div className="space-y-12">
             {/* Early Years */}
             <div className="flex flex-col md:flex-row gap-6">
               <div className="md:w-1/3">
-                <img src="/banner-images/3-5.jpeg" alt="Description of your image" className="h-60 w-full object-cover rounded-lg" />
+                <img 
+                  src="/banner-images/3-5.jpeg" 
+                  alt="Early years students at Leeds Cambridge Campus engaging in Montessori activities" 
+                  className="h-60 w-full object-cover rounded-lg" 
+                  loading="lazy"
+                />
               </div>
               <div className="md:w-2/3">
                 <h3 className="text-2xl font-semibold text-teal-700 mb-2">Early Years (Ages 3–5)</h3>
@@ -111,11 +161,16 @@ const CambridgeCampus = () => {
                 </ul>
               </div>
             </div>
-  
+
             {/* Primary */}
             <div className="flex flex-col md:flex-row gap-6">
               <div className="md:w-1/3 order-2 md:order-1">
-                <img src="/banner-images/5-11.jpeg" alt="Description of your image" className="h-60 w-full object-cover rounded-lg" />
+                <img 
+                  src="/banner-images/5-11.jpeg" 
+                  alt="Primary students at Leeds Cambridge Campus participating in classroom activities" 
+                  className="h-60 w-full object-cover rounded-lg" 
+                  loading="lazy"
+                />
               </div>
               <div className="md:w-2/3 order-1 md:order-2">
                 <h3 className="text-2xl font-semibold text-teal-700 mb-2">Primary (Ages 5–11)</h3>
@@ -138,17 +193,22 @@ const CambridgeCampus = () => {
                       <li>Computing</li>
                       <li>Art & Design</li>
                       <li>Physical Education</li>
-                      <li>Modern Languages (French/Spanish)</li>
+                      <li>Modern Languages (French/Chinese)</li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
-  
+
             {/* Lower Secondary */}
             <div className="flex flex-col md:flex-row gap-6">
               <div className="md:w-1/3">
-                <img src="/banner-images/11-14.jpeg" alt="Description of your image" className="h-60 w-full object-cover rounded-lg" />
+                <img 
+                  src="/banner-images/11-14.jpeg" 
+                  alt="Lower secondary students conducting science experiments at Leeds Cambridge Campus" 
+                  className="h-60 w-full object-cover rounded-lg" 
+                  loading="lazy"
+                />
               </div>
               <div className="md:w-2/3">
                 <h3 className="text-2xl font-semibold text-teal-700 mb-2">Lower Secondary (Ages 11–14)</h3>
@@ -169,11 +229,16 @@ const CambridgeCampus = () => {
                 </p>
               </div>
             </div>
-  
+
             {/* IGCSE */}
             <div className="flex flex-col md:flex-row gap-6">
               <div className="md:w-1/3 order-2 md:order-1">
-                <img src="/banner-images/14-16.jpeg" alt="Description of your image" className="h-60 w-full object-cover rounded-lg" />
+                <img 
+                  src="/banner-images/14-16.jpeg" 
+                  alt="IGCSE students studying at Leeds Cambridge Campus in Kenya" 
+                  className="h-60 w-full object-cover rounded-lg" 
+                  loading="lazy"
+                />
               </div>
               <div className="md:w-2/3 order-1 md:order-2">
                 <h3 className="text-2xl font-semibold text-teal-700 mb-2">IGCSE (Ages 14–16)</h3>
@@ -214,7 +279,7 @@ const CambridgeCampus = () => {
             </div>
           </div>
         </section>
-  
+
         {/* Facilities Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-teal-800 mb-6">Our World-Class Facilities</h2>
@@ -246,7 +311,7 @@ const CambridgeCampus = () => {
                   <svg className="h-5 w-5 text-teal-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span>STEAM innovation hub.</span>
+                  <span>STEAM innovation hub</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="h-5 w-5 text-teal-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -271,9 +336,8 @@ const CambridgeCampus = () => {
                   <svg className="h-5 w-5 text-teal-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span>Well-sized sports field.</span>
+                  <span>Well-sized sports field</span>
                 </li>
-                
                 <li className="flex items-start">
                   <svg className="h-5 w-5 text-teal-600 mr-2 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -284,23 +348,23 @@ const CambridgeCampus = () => {
             </div>
           </div>
           
-          {/* Facilities Gallery Placeholder */}
+          {/* Facilities Gallery */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            <div className="bg-teal-100 h-40 rounded-lg flex items-center justify-center text-teal-800">
-                <img src="/banner-images/art-room.jpeg" alt="art room" className="h-50 w-full object-cover rounded-lg" />
+            <div className="h-40 rounded-lg overflow-hidden">
+                <img src="/banner-images/art-room.jpeg" alt="Art room at Leeds Cambridge Campus" className="h-full w-full object-cover" loading="lazy" />
             </div>
-            <div className="bg-teal-100 h-40 rounded-lg flex items-center justify-center text-teal-800">
-                <img src="/gallery/cambridge/games-outside.jpeg" alt="Kids In class" className="h-50 w-full object-cover rounded-lg" />
+            <div className="h-40 rounded-lg overflow-hidden">
+                <img src="/gallery/cambridge/games-outside.jpeg" alt="Students playing games outdoors at Leeds Cambridge Campus" className="h-full w-full object-cover" loading="lazy" />
             </div>
-            <div className="bg-teal-100 h-40 rounded-lg flex items-center justify-center">
-                <img src="/gallery/cambridge/kids-in-class.jpeg" alt="School bus" className="h-50 w-full object-cover rounded-lg" />
+            <div className="h-40 rounded-lg overflow-hidden">
+                <img src="/gallery/cambridge/kids-in-class.jpeg" alt="Students learning in classroom at Leeds Cambridge Campus" className="h-full w-full object-cover" loading="lazy" />
             </div>
-            <div className="bg-teal-100 h-40 rounded-lg flex items-center justify-center text-teal-800">
-                <img src="/banner-images/swimming.jpeg" alt="swimming pool" className="h-50 w-full object-cover rounded-lg" />
+            <div className="h-40 rounded-lg overflow-hidden">
+                <img src="/banner-images/swimming.jpeg" alt="Swimming pool at Leeds Cambridge Campus in Kenya" className="h-full w-full object-cover" loading="lazy" />
             </div>
           </div>
         </section>
-  
+
         {/* Academic Excellence */}
         <section className="mb-16 bg-teal-800 text-white p-8 rounded-xl">
           <h2 className="text-3xl font-bold mb-6">A Learning Environment That Inspires</h2>
@@ -331,12 +395,16 @@ const CambridgeCampus = () => {
             </div>
 
             <div className="bg-teal-700 p-1 rounded-xl flex items-center justify-center">
-              <img src="/gallery/cambridge/students-learning.jpeg" alt="Students Learning" className="rounded-lg w-full h-64 object-cover" />
+              <img 
+                src="/gallery/cambridge/students-learning.jpeg" 
+                alt="Students engaged in collaborative learning at Leeds Cambridge Campus" 
+                className="rounded-lg w-full h-64 object-cover" 
+                loading="lazy"
+              />
             </div>
           </div>
         </section>
 
-  
         {/* Student Life */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-teal-800 mb-6">Student Life at Leeds Cambridge</h2>
@@ -400,7 +468,7 @@ const CambridgeCampus = () => {
             </div>
           </div>
         </section>
-  
+
         {/* Admissions Process */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-teal-800 mb-6">Admissions Process</h2>
@@ -464,7 +532,7 @@ const CambridgeCampus = () => {
             </div>
           </div>
         </section>
-  
+
         {/* Leadership Team */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-teal-800 mb-6">Meet Part of Our Team</h2>
@@ -472,7 +540,12 @@ const CambridgeCampus = () => {
          <div className="grid md:grid-cols-3 gap-6">
           {/* Card 1 */}
           <div className="bg-white border border-teal-100 rounded-lg overflow-hidden">
-            <img src="/banner-images/headteacher.jpeg" alt="Ms. Wambui" className="w-full h-72 object-cover" />
+            <img 
+              src="/banner-images/headteacher.jpeg" 
+              alt="Ms. Wambui, Head of Institution at Leeds Cambridge Campus" 
+              className="w-full h-72 object-cover" 
+              loading="lazy"
+            />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-teal-700 mb-1">Ms. Wambui</h3>
               <p className="text-teal-600 mb-3">Head of Institution</p>
@@ -482,20 +555,30 @@ const CambridgeCampus = () => {
 
           {/* Card 2 */}
           <div className="bg-white border border-teal-100 rounded-lg overflow-hidden">
-            <img src="/banner-images/elizabeth.jpeg" alt="Mrs. Elizabeth" className="w-full h-72 object-cover" />
+            <img 
+              src="/gallery/cambridge/Ms-Luciana.jpg" 
+              alt="Ms. Luciana, Head of Primary at Leeds Cambridge Campus" 
+              className="w-full h-72 object-cover" 
+              loading="lazy"
+            />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-teal-700 mb-1">Ms. Luciana</h3>
               <p className="text-teal-600 mb-3">Head of Primary</p>
-              <p className="text-gray-700 text-sm">teaching incoperated with care and good up-bringing.</p>
+              <p className="text-gray-700 text-sm">Teaching incoperated with care and good up-bringing.</p>
             </div>
           </div>
           {/* Card 3 */}
           <div className="bg-white border border-teal-100 rounded-lg overflow-hidden">
-            <img src="/banner-images/Mrs-David.jpeg" alt="Ms. Linda Rob" className="w-full h-72 object-cover" />
+            <img 
+              src="/gallery/cambridge/Ms-Linda.jpg" 
+              alt="Ms. Linda Rob, Creche specialist at Leeds Cambridge Campus" 
+              className="w-full h-72 object-cover" 
+              loading="lazy"
+            />
             <div className="p-6">
               <h3 className="text-xl font-semibold text-teal-700 mb-1">Ms. Linda Rob</h3>
               <p className="text-teal-600 mb-3">Creche</p>
-              <p className="text-gray-700 text-sm">Specialist in early childhood education</p>
+              <p className="text-gray-700 text-sm">Specialist in early childhood</p>
             </div>
           </div>
         </div>
@@ -527,6 +610,7 @@ const CambridgeCampus = () => {
           </div>
         </section>
       </div>
+    </>
     );
   };
   
