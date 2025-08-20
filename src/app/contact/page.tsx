@@ -168,7 +168,7 @@ const ContactPage = () => {
                     </svg>
                   </div>
                   <div className="ml-3">
-                    <p className="text-gray-700">123 Brigadier Market</p>
+                    <p className="text-gray-700">4175, Kitale</p>
                     <p className="text-gray-700">Leeds</p>
                     <p className="text-gray-700">Bungoma, Kenya</p>
                   </div>
@@ -197,20 +197,7 @@ const ContactPage = () => {
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* Map */}
-            <div className="overflow-hidden rounded-xl shadow-md">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.10506457954!2d36.810340799999995!3d-1.26537295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f172d80d3f0cb%3A0x3ff11657a3cb325e!2sParklands%20Baptist%20Church!5e0!3m2!1sen!2ske!4v1715066902193!5m2!1sen!2ske"
-                width="100%"
-                height="300"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                title="Leeds Premier Schools Location"
-              />
-            </div>
+            </div> 
           </div>
         </div>
       </div>
