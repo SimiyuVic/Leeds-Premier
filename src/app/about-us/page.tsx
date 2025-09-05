@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from 'next/head';
 
 const About = () => {
@@ -60,97 +61,107 @@ const About = () => {
 
         {/* Campuses Overview */}
         <section className="mb-16 bg-teal-50 p-8 rounded-xl">
-          <h2 className="text-3xl font-bold text-teal-800 mb-8 text-center">Our Three Campuses</h2>
-          
+          <h2 className="text-3xl font-bold text-teal-800 mb-8 text-center">
+            Our Three Campuses
+          </h2>
+
           <div className="grid md:grid-cols-3 gap-6">
             {/* CBC Campus */}
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-teal-100">
-              <img 
-                src="/gallery/cbc/cbc-5.jpeg" 
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-teal-100 flex flex-col">
+              <img
+                src="/gallery/cbc/cbc-5.jpeg"
                 alt="CBC Campus in Transzoia County, Kitale"
                 className="w-full h-48 object-cover"
               />
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-semibold text-teal-700 mb-2">CBC Campus</h3>
                 <p className="text-gray-700 mb-3">
-                  Located in Bungoma County along Tongaren-Matunda Road near Brigadier Market, our CBC Campus offers the Competency-Based Curriculum from Early Years to Junior Secondary, focusing on holistic, skills-based education for Kenyan learners.
+                  Located in Bungoma County along Tongaren-Matunda Road near Brigadier Market,
+                  our CBC Campus offers the Competency-Based Curriculum from Early Years to
+                  Junior Secondary, focusing on holistic, skills-based education for Kenyan learners.
                 </p>
-                <ul className="list-disc ml-6 text-gray-700 space-y-1 text-sm">
+                <ul className="list-disc ml-6 text-gray-700 space-y-1 text-sm mb-4">
                   <li>Aligned with national education goals</li>
                   <li>7 core competencies development</li>
                   <li>Community-rooted learning</li>
                   <li>Local language integration</li>
                 </ul>
-                <div className="mt-4">
-                  <a 
-                    href="/schools/cbc-campus" 
-                    className="inline-block bg-teal-600 hover:bg-teal-700 text-white font-medium py-2 px-4 rounded transition duration-300"
+                <div className="mt-auto">
+                  <a
+                    href="/schools/cbc-campus"
+                    className="inline-block bg-teal-600 hover:bg-teal-700 text-white font-medium py-2 px-4 rounded transition duration-300 w-full text-center"
                   >
-                    Learn More About CBC Campus
+                    View More
                   </a>
                 </div>
               </div>
             </div>
 
             {/* Cambridge Campus */}
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-teal-100">
-              <img 
-                src="/gallery/cambridge/about-us-2.jpeg" 
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-teal-100 flex flex-col">
+              <img
+                src="/gallery/cambridge/about-us-2.jpeg"
                 alt="Cambridge Campus in Bungoma County"
                 className="w-full h-48 object-cover"
               />
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-semibold text-teal-700 mb-2">Cambridge Campus</h3>
                 <p className="text-gray-700 mb-3">
-                  Located in Transzoia County, Kitale along Kitale Webuye Road at Sister Fridah Junction, our Cambridge Campus offers the complete Cambridge Pathway from Early Years through A-Levels, preparing students for global opportunities and international education.
+                  Located in Transzoia County, Kitale along Kitale Webuye Road at Sister Fridah
+                  Junction, our Cambridge Campus offers the complete Cambridge Pathway from
+                  Early Years through A-Levels, preparing students for global opportunities and
+                  international education.
                 </p>
-                <ul className="list-disc ml-6 text-gray-700 space-y-1 text-sm">
+                <ul className="list-disc ml-6 text-gray-700 space-y-1 text-sm mb-4">
                   <li>Globally recognized qualifications</li>
                   <li>IGCSE and A-Level preparation</li>
                   <li>International university pathways</li>
                   <li>British curriculum standards</li>
                 </ul>
-                <div className="mt-4">
-                  <a 
-                    href="/schools/cambridge-campus" 
-                    className="inline-block bg-teal-600 hover:bg-teal-700 text-white font-medium py-2 px-4 rounded transition duration-300"
+                <div className="mt-auto">
+                  <a
+                    href="/schools/cambridge-campus"
+                    className="inline-block bg-teal-600 hover:bg-teal-700 text-white font-medium py-2 px-4 rounded transition duration-300 w-full text-center"
                   >
-                    Learn More About Cambridge Campus
+                    View More
                   </a>
                 </div>
               </div>
             </div>
 
-            {/* National Curriculum Campus */}
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-teal-100">
-              <img 
+            {/* Teachers Training College */}
+            <div className="bg-white rounded-lg shadow-sm overflow-hidden border border-teal-100 flex flex-col">
+              <img
                 src="/gallery/ttc/ttc-campus-1.jpeg"
                 alt="Teachers Training College in Bungoma County"
                 className="w-full h-48 object-cover"
               />
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-semibold text-teal-700 mb-2">Teachers Training College</h3>
                 <p className="text-gray-700 mb-3">
-                  Located in Bungoma County near Brigadier Market, equipping future educators with the skills, knowledge, and methodologies needed to thrive in modern classrooms across Kenya.
+                  Located in Bungoma County near Brigadier Market, equipping future educators
+                  with the skills, knowledge, and methodologies needed to thrive in modern
+                  classrooms across Kenya.
                 </p>
-                <ul className="list-disc ml-6 text-gray-700 space-y-1 text-sm">
+                <ul className="list-disc ml-6 text-gray-700 space-y-1 text-sm mb-4">
                   <li>Competency-based teacher training</li>
                   <li>Practical teaching practice and mentorship</li>
                   <li>Curriculum delivery for ECDE and P1 levels</li>
                   <li>Integration of pedagogy with local educational needs</li>
                 </ul>
-                <div className="mt-4">
-                  <a 
-                    href="/schools/teachers-training-college" 
-                    className="inline-block bg-teal-600 hover:bg-teal-700 text-white font-medium py-2 px-4 rounded transition duration-300"
+                <div className="mt-auto">
+                  <a
+                    href="/schools/teachers-training-college"
+                    className="inline-block bg-teal-600 hover:bg-teal-700 text-white font-medium py-2 px-4 rounded transition duration-300 w-full text-center"
                   >
-                    Learn More About TTC
+                    View More
                   </a>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
 
         {/* Educational Philosophy */}
         <section className="mb-16">
