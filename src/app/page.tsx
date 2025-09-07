@@ -138,7 +138,7 @@ export default function Home() {
                   description: "Located in Brigadier along Matunda–Misikhu Road, our CBC Campus offers the best Competency-Based Curriculum from pre-primary to junior secondary levels in Bungoma County and Kenya at large. It features modern facilities, technology-enhanced learning, and a focus on creativity and life skills.",
                   href: "/schools/cbc-campus",
                   image: "/home-page/cbc-campus.jpeg",
-                  buttonLabel: "More About CBC Campus",
+                  buttonLabel: "View More",
                   location: "Brigadier – Matunda–Misikhu Road"
                 },
                 {
@@ -146,7 +146,7 @@ export default function Home() {
                   description: "Situated along Kitale–Kiminini Road at Sister Fridah Junction, our Cambridge Campus delivers the internationally acclaimed British curriculum, preparing learners for IGCSE and A-Level examinations with global university opportunities.",
                   href: "/schools/cambridge-campus",
                   image: "/home-page/cambridge-campus.jpeg",
-                  buttonLabel: "More About Cambridge Campus",
+                  buttonLabel: "View More",
                   location: "Kitale–Kiminini Road at Sister Fridah Junction"
                 },
                 {
@@ -154,7 +154,7 @@ export default function Home() {
                   description: "Located in Brigadier along Matunda–Misikhu Road, our Teacher Training College (TTC) offers accredited programs in ECDE, P1, and Diploma in Education. We blend theory with real classroom practice to prepare competent and passionate educators.",
                   href: "/schools/teachers-training-college",
                   image: "/home-page/ttc-campus-1.jpeg",
-                  buttonLabel: "More About TTC",
+                  buttonLabel: "View More",
                   location: "Brigadier – Matunda–Misikhu Road"
                 }
 

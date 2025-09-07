@@ -11,7 +11,9 @@ const SchoolGallery = () => {
         '/gallery/cbc/cbc-campus-1.jpeg',
         '/gallery/cbc/cbc-campus-2.jpeg',
         '/gallery/cbc/cbc-campus-3.jpeg',
-        
+        '/gallery/cbc/cbc-campus-4.jpg',
+        '/gallery/cbc/cbc-campus-5.jpg',
+        '/gallery/cbc/cbc-campus-6.jpg',
       ]
     },
     {
@@ -20,6 +22,9 @@ const SchoolGallery = () => {
         '/gallery/cambridge/cambridge-campus-1.jpeg',
         '/gallery/cambridge/cambridge-campus-2.jpeg',
         '/gallery/cambridge/cambridge-campus-3.jpeg',
+        '/gallery/cambridge/cambridge-campus-4.jpg',
+        '/gallery/cambridge/cambridge-campus-5.jpg',
+        '/gallery/cambridge/cambridge-campus-6.jpg',
       ]
     },
     {
@@ -39,7 +44,7 @@ const SchoolGallery = () => {
           <h3 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-2">
             {campus.name}
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {campus.images.map((src, index) => (
               <div 
                 key={index} 
