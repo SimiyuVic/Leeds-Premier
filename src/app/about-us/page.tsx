@@ -14,13 +14,12 @@ const About = () => {
         <meta property="og:url" content="https://leedspremierschools.com/about" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-
       <div className="max-w-6xl mx-auto px-6 py-12 mt-20">
         {/* Hero Section */}
         <header className="relative mb-12 rounded-xl overflow-hidden">
           <img 
             src="/images/about-hero.jpg" 
-            alt="Leeds Premier Schools - Transforming Education in Bungoma and Transzoia Counties"
+            alt="Leeds Premier Schools - Transforming Education in Bungoma and Trans-Nzoia Counties"
             className="w-full h-96 object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">

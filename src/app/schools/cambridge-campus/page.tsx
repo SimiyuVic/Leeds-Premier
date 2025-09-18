@@ -1,5 +1,6 @@
 
 import Head from 'next/head';
+import { Instagram, Facebook } from "lucide-react"; 
 
 const CambridgeCampus = () => {
   return (
@@ -584,7 +585,7 @@ const CambridgeCampus = () => {
         </div>
         </section>
         {/* Contact & CTA */}
-        <section className="bg-teal-800 text-white rounded-xl overflow-hidden">
+        <section className="bg-teal-800 text-white rounded-xl overflow-hidden mb-10">
           <div className="grid md:grid-cols-2 h-[300px] sm:h-[350px] md:h-[450px] lg:h-[400px]">
             
             {/* Left: Message */}
@@ -609,6 +610,111 @@ const CambridgeCampus = () => {
 
           </div>
         </section>
+        {/* Reviews + Location (same row, 6 each on desktop, stacked on mobile) */}
+<section className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
+  {/* Reviews Card */}
+  <div className="bg-white shadow-lg rounded-2xl p-8 text-center hover:shadow-2xl transition">
+    <h2 className="text-2xl font-bold text-teal-700 mb-4">
+      We Value Your Feedback
+    </h2>
+    <p className="text-gray-700 mb-6">
+      Share your experience with us on Google Reviews.
+    </p>
+    <a
+      href="https://g.page/r/CVMewQIqgVV1EAE/review"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-teal-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-500 transition"
+    >
+      Leave a Review
+    </a>
+  </div>
+
+  {/* Location Card */}
+  <div className="bg-white shadow-lg rounded-2xl p-8 text-center hover:shadow-2xl transition">
+    <h2 className="text-2xl font-bold text-teal-700 mb-4">
+      Know Our Location
+    </h2>
+    <p className="text-gray-700 mb-6">
+      Find us easily using Google Maps.
+    </p>
+    <a
+      href="https://maps.app.goo.gl/2uDo4ZUFc5eYF6nn6" // replace with your link
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block bg-teal-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-teal-500 transition"
+    >
+      View on Google Maps
+    </a>
+  </div>
+</section>
+
+{/* Socials Card (full width below with spacing) */}
+<section className="bg-white shadow-lg rounded-2xl p-8 text-center hover:shadow-2xl transition mt-10">
+  <h2 className="text-2xl font-bold text-teal-700 mb-4">
+    Connect With Us
+  </h2>
+  <p className="text-gray-700 mb-6">
+    Follow us on social media for updates and events.
+  </p>
+  <div className="flex justify-center gap-6">
+    {/* Instagram */}
+    <a
+      href="https://www.instagram.com/leeds_international_school_?igsh=MWlveW1lMWN2YzVx"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-4 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white shadow-md hover:scale-110 transition"
+    >
+      {/* Instagram Icon */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        className="w-6 h-6"
+      >
+        <path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 2 .2 2.5.4.6.2 1 .5 1.5 1 .5.5.8.9 1 1.5.2.5.4 1.3.4 2.5.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 2-.4 2.5-.2.6-.5 1-1 1.5-.5.5-.9.8-1.5 1-.5.2-1.3.4-2.5.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-2-.2-2.5-.4-.6-.2-1-.5-1.5-1-.5-.5-.8-.9-1-1.5-.2-.5-.4-1.3-.4-2.5-.1-1.2-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-1.2.2-2 .4-2.5.2-.6.5-1 1-1.5.5-.5.9-.8 1.5-1 .5-.2 1.3-.4 2.5-.4 1.2-.1 1.6-.1 4.8-.1m0-2.2c-3.3 0-3.7 0-5 .1-1.3.1-2.2.3-3 .6-.8.3-1.5.7-2.1 1.3-.6.6-1 1.3-1.3 2.1-.3.8-.5 1.7-.6 3C0 8.3 0 8.7 0 12s0 3.7.1 5c.1 1.3.3 2.2.6 3 .3.8.7 1.5 1.3 2.1.6.6 1.3 1 2.1 1.3.8.3 1.7.5 3 .6 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3-.1 2.2-.3 3-.6.8-.3 1.5-.7 2.1-1.3.6-.6 1-1.3 1.3-2.1.3-.8.5-1.7.6-3 .1-1.3.1-1.7.1-5s0-3.7-.1-5c-.1-1.3-.3-2.2-.6-3-.3-.8-.7-1.5-1.3-2.1-.6-.6-1.3-1-2.1-1.3-.8-.3-1.7-.5-3-.6-1.3-.1-1.7-.1-5-.1z" />
+        <path d="M12 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.7a1.4 1.4 0 1 0 0 2.8 1.4 1.4 0 0 0 0-2.8z" />
+      </svg>
+    </a>
+
+    {/* Facebook */}
+    <a
+      href="https://www.facebook.com/share/17FAHKJwjj/?mibextid=wwXIfr"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-4 rounded-full bg-blue-600 text-white shadow-md hover:scale-110 transition"
+    >
+      {/* Facebook Icon */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        className="w-6 h-6"
+      >
+        <path d="M22.675 0h-21.35C.595 0 0 .6 0 1.326v21.348C0 23.4.595 24 1.325 24h11.494v-9.294H9.691v-3.622h3.128V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.464.1 2.796.145v3.24h-1.922c-1.51 0-1.804.717-1.804 1.77v2.318h3.607l-.47 3.622h-3.137V24h6.157C23.405 24 24 23.4 24 22.674V1.326C24 .6 23.405 0 22.675 0" />
+      </svg>
+    </a>
+
+    {/* TikTok */}
+    <a
+      href="https://www.tiktok.com/@leedsinternationalschool"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="p-4 rounded-full bg-black text-white shadow-md hover:scale-110 transition"
+    >
+      {/* TikTok Icon */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 48 48"
+        fill="currentColor"
+        className="w-6 h-6"
+      >
+        <path d="M41,15.13a10.85,10.85,0,0,1-6.26-2A10.56,10.56,0,0,1,32.19,9a11.43,11.43,0,0,1-1-3.9H26.09V32.68a5.43,5.43,0,1,1-4.69-5.37V21.12a11.43,11.43,0,1,0,12.72,11.37V19.71a15.36,15.36,0,0,0,7.34,1.89Z" />
+      </svg>
+    </a>
+  </div>
+</section>
+
       </div>
     </>
     );

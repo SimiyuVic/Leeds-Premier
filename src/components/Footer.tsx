@@ -34,25 +34,7 @@ export default function Footer() {
               <Phone className="w-4 h-4" /> <span>+254 116093086</span>
             </Link>
           </div>
-          <div className="flex space-x-4 mt-4">
-            <Link href="#" className="text-gray-500 hover:text-teal-600 transition">
-              <Facebook className="w-6 h-6" />
-            </Link>
-            <Link href="#" className="text-gray-500 hover:text-teal-600 transition">
-              {/* Latest Twitter (X) icon as SVG */}
-              <svg
-                className="w-6 h-6"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path d="M20.69 3.65H18.4l-4.73 6.06-5.31-6.06H2.84l6.87 7.83L2 20.35h2.29l5.03-6.45 5.66 6.45h4.68l-7.42-8.44 8.45-8.26z" />
-              </svg>
-            </Link>
-            <Link href="#" className="text-gray-500 hover:text-teal-600 transition">
-              <Instagram className="w-6 h-6" />
-            </Link>
-          </div>
+         
         </div>
 
         {/* Column 3: Quick Links */}
